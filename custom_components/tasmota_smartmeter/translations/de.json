@@ -1,0 +1,136 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tasmota-Stromzähler-Lesekopf",
+        "description": "Liest alle Werte von der Weboberfläche des Geräts. Am Gerät wird nichts verändert.",
+        "data": {
+          "host": "Adresse",
+          "password": "Web-Passwort"
+        },
+        "data_description": {
+          "host": "IP-Adresse oder Name des Tasmota-Lesekopfs.",
+          "password": "Nur nötig, wenn in Tasmota ein Web-Passwort gesetzt ist."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Web-Passwort",
+        "data": {
+          "password": "Web-Passwort"
+        },
+        "data_description": {
+          "password": "Nur nötig, wenn in Tasmota ein Web-Passwort gesetzt ist."
+        }
+      },
+      "reconfigure": {
+        "title": "Verbindung ändern",
+        "data": {
+          "host": "Adresse",
+          "password": "Web-Passwort"
+        },
+        "data_description": {
+          "host": "IP-Adresse oder Name des Tasmota-Lesekopfs.",
+          "password": "Nur nötig, wenn in Tasmota ein Web-Passwort gesetzt ist."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Keine Verbindung zum Gerät.",
+      "invalid_auth": "Das Web-Passwort wurde abgelehnt.",
+      "no_meter_data": "Das Gerät zeigt keine Messwerte an."
+    },
+    "abort": {
+      "already_configured": "Dieses Gerät ist bereits eingerichtet.",
+      "reauth_successful": "Passwort aktualisiert.",
+      "reconfigure_successful": "Verbindung aktualisiert.",
+      "wrong_device": "Das ist ein anderes Gerät."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "energy_import": {
+        "name": "Bezug gesamt"
+      },
+      "energy_export": {
+        "name": "Einspeisung gesamt"
+      },
+      "energy_import_t1": {
+        "name": "Bezug Tarif 1"
+      },
+      "energy_import_t2": {
+        "name": "Bezug Tarif 2"
+      },
+      "energy_export_t1": {
+        "name": "Einspeisung Tarif 1"
+      },
+      "energy_export_t2": {
+        "name": "Einspeisung Tarif 2"
+      },
+      "power_import": {
+        "name": "Bezugsleistung"
+      },
+      "power_export": {
+        "name": "Einspeiseleistung"
+      },
+      "power_net": {
+        "name": "Saldo"
+      },
+      "power_import_l1": {
+        "name": "Leistung L1"
+      },
+      "power_import_l2": {
+        "name": "Leistung L2"
+      },
+      "power_import_l3": {
+        "name": "Leistung L3"
+      },
+      "reactive_power_import": {
+        "name": "Blindleistung Bezug (Q+)"
+      },
+      "reactive_power_export": {
+        "name": "Blindleistung Lieferung (Q-)"
+      },
+      "reactive_energy_import": {
+        "name": "Blindenergie Bezug (R+)"
+      },
+      "reactive_energy_export": {
+        "name": "Blindenergie Lieferung (R-)"
+      },
+      "collection_energy": {
+        "name": "Inkasso-Energie"
+      },
+      "voltage_l1": {
+        "name": "Spannung L1"
+      },
+      "voltage_l2": {
+        "name": "Spannung L2"
+      },
+      "voltage_l3": {
+        "name": "Spannung L3"
+      },
+      "current_l1": {
+        "name": "Strom L1"
+      },
+      "current_l2": {
+        "name": "Strom L2"
+      },
+      "current_l3": {
+        "name": "Strom L3"
+      },
+      "frequency": {
+        "name": "Netzfrequenz"
+      },
+      "power_factor": {
+        "name": "Leistungsfaktor"
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Keine Verbindung zum Gerät."
+    },
+    "invalid_auth": {
+      "message": "Das Web-Passwort wurde abgelehnt."
+    }
+  }
+}

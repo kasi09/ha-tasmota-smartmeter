@@ -1,0 +1,12 @@
+{
+  "domain": "tasmota_smartmeter",
+  "name": "Tasmota Smart Meter",
+  "codeowners": ["@kasi09"],
+  "config_flow": true,
+  "documentation": "https://github.com/kasi09/ha-tasmota-smartmeter",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/kasi09/ha-tasmota-smartmeter/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

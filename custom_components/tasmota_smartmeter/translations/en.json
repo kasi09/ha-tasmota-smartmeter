@@ -1,0 +1,136 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tasmota smart meter reader",
+        "description": "Reads all values from the device's web page. Nothing on the device is changed.",
+        "data": {
+          "host": "Host",
+          "password": "Web password"
+        },
+        "data_description": {
+          "host": "IP address or host name of the Tasmota reading head.",
+          "password": "Only if a web password is set in Tasmota."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Web password",
+        "data": {
+          "password": "Web password"
+        },
+        "data_description": {
+          "password": "Only if a web password is set in Tasmota."
+        }
+      },
+      "reconfigure": {
+        "title": "Change connection",
+        "data": {
+          "host": "Host",
+          "password": "Web password"
+        },
+        "data_description": {
+          "host": "IP address or host name of the Tasmota reading head.",
+          "password": "Only if a web password is set in Tasmota."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the device.",
+      "invalid_auth": "The web password was rejected.",
+      "no_meter_data": "The device shows no numeric sensor values."
+    },
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "reauth_successful": "Password updated.",
+      "reconfigure_successful": "Connection updated.",
+      "wrong_device": "This is a different device."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "energy_import": {
+        "name": "Import energy"
+      },
+      "energy_export": {
+        "name": "Export energy"
+      },
+      "energy_import_t1": {
+        "name": "Import energy tariff 1"
+      },
+      "energy_import_t2": {
+        "name": "Import energy tariff 2"
+      },
+      "energy_export_t1": {
+        "name": "Export energy tariff 1"
+      },
+      "energy_export_t2": {
+        "name": "Export energy tariff 2"
+      },
+      "power_import": {
+        "name": "Import power"
+      },
+      "power_export": {
+        "name": "Export power"
+      },
+      "power_net": {
+        "name": "Net power"
+      },
+      "power_import_l1": {
+        "name": "Power L1"
+      },
+      "power_import_l2": {
+        "name": "Power L2"
+      },
+      "power_import_l3": {
+        "name": "Power L3"
+      },
+      "reactive_power_import": {
+        "name": "Reactive power import (Q+)"
+      },
+      "reactive_power_export": {
+        "name": "Reactive power export (Q-)"
+      },
+      "reactive_energy_import": {
+        "name": "Reactive energy import (R+)"
+      },
+      "reactive_energy_export": {
+        "name": "Reactive energy export (R-)"
+      },
+      "collection_energy": {
+        "name": "Collection energy"
+      },
+      "voltage_l1": {
+        "name": "Voltage L1"
+      },
+      "voltage_l2": {
+        "name": "Voltage L2"
+      },
+      "voltage_l3": {
+        "name": "Voltage L3"
+      },
+      "current_l1": {
+        "name": "Current L1"
+      },
+      "current_l2": {
+        "name": "Current L2"
+      },
+      "current_l3": {
+        "name": "Current L3"
+      },
+      "frequency": {
+        "name": "Grid frequency"
+      },
+      "power_factor": {
+        "name": "Power factor"
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Cannot connect to the device."
+    },
+    "invalid_auth": {
+      "message": "The web password was rejected."
+    }
+  }
+}
